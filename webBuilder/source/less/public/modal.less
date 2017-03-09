@@ -1,0 +1,108 @@
+@charset "utf-8";
+/**
+*@name:modal.css
+*@function:弹出窗样式
+*/
+
+.modal{
+  display:none;
+  position:fixed;
+  bottom:0;
+  left:0;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  z-index:1050;
+  outline:0 none;
+}
+.modal-header{
+  padding:10px 20px;
+  border-radius:6px 6px 0 0;
+  background-color:#e7eaec;
+  color:#519be4;
+  fnot-size:18px;
+}
+.modal .modal-body{
+  max-height:500px;
+  overflow-y:auto;
+  height:100%;
+}
+
+.modal-title{
+  margin:0;
+  font-weight: bold;
+  font-size:18px;
+  line-height:1.42857143;
+}
+.modal-body{
+  position:relative;
+  padding:20px;
+}
+.modal-footer{
+  padding:20px;
+  text-align:center;
+  /*text-align:right;*/
+}
+
+.madal-backdrop{
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:1040;
+  background-color:#999;
+}
+
+.modal-backdrop.fade{
+  filter:alpha(opacity=10);
+  opacity:0.1;
+}
+.modal-backdrop.in{
+  filter:alpha(opacity=10);
+  opacity:0.1;
+}
+
+.fade{
+  -webkit-transform: none;
+  transform:none;
+}
+
+.modal.fade .modal-dialog{
+  -webkit-transform: none;
+  -moz-transition:none;
+  -o-transition:none;
+  transition:none;
+  /*弹出窗口居中part1*/
+  margin-left:-1200px;
+}
+
+.loading-wrap,
+.loading-wrap .modal-content{
+  background:none;
+  text-align:center;
+  border:0 none;
+  box-shadow:none;
+  color:#fff;
+  font-size:24px;
+}
+
+.loading-wrap  .load{
+  width:30px;
+  height:30px;
+}
+
+.loading-wrap  .message{
+  font-size:24px;
+  color:#fff;
+}
+
+/*
+.loading .modal-backdrop.fade{
+  filter:alpha(opacity=50);
+  opacity:0.5;
+}
+.loading .modal-backdrop.in{
+  filter:alpha(opacity=50);
+  opacity:0.5;
+}
+*/

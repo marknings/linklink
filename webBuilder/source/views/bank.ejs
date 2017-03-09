@@ -1,0 +1,73 @@
+<!doctype html>
+<% var page="bank.html" %>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>基金互认服务平台</title>
+    <% include common/comCss.ejs %>
+</head>
+<body>
+<% include common/header.ejs %>
+
+<div class="context_photo_productvalue">
+</div>
+<div class="container mb40" id="ProductEle">
+	<div class="page-header fz20 cblue">基金申请数据
+		<button ns-click="addFund()" class="btn btn-primary pull-right">新增</button>
+	</div>
+	<div class="context_back">
+        <div>
+            <div class="content_box">
+                <div class="product_frame">
+                    <div>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th width="15%">申请单号</th>
+                                    <th width="15%">业务代码</th>
+                                    <th width="15%">基金账户</th>
+                                    <th width="15%">基金代码</th>
+                                    <th width="20%">申请金额</th>
+                                    <th width="20%"> 操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ns-repeat="item in data">
+                                    <td>
+                                        <span  ns-bind="item.applyNo"></span>
+                                    </td>
+                                    <td>
+                                        <span ns-bind="item.serviceCode"></span>
+                                    </td>
+                                    <td>
+                                        <span ns-bind="item.fundAccount"></span>
+                                    </td>
+                                    <td>
+                                        <span ns-bind="item.fundCode"></span>
+                                    </td>
+                                    <td>
+                                        <span ns-bind="item.applyAmount"></span>
+                                    </td>
+                                    <td align="center">
+                                        <p>
+                                            <button  class="btn btn-primary" ns-click="openDetail(item)">查看详情</button>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% include common/footer.ejs %>
+<% include common/comJs.ejs %>
+<script src="common/js/bank.min.js"></script>
+</body>
+</html>

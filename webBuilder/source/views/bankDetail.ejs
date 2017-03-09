@@ -1,0 +1,118 @@
+<div class="modal  fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div id="modalProduct" class="modal-dialog modal-lg">
+        <div class="modal-content">
+         <form ns-submit="comfirm()">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title"  >
+                <span ns-bind="applyNo"></span>-详情</h4>
+            </div>
+            <div class="modal-body">
+            <div  class="lh34 fz16">
+                <div class="row">
+                    <div class="col-xs-4 text-right">
+                        <span>申请单号:</span>
+                    </div>
+                    <div class="col-xs-8 text-left">
+                        <input type="text" class="form-control" ns-bind="applyNo" required="" autofocus=""/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 text-right">
+                        <span>业务代码:</span>
+                    </div>
+                    <div class="col-xs-8 text-left">
+                        <input type="text" class="form-control" ns-bind="serviceCode" required="" autofocus=""/>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-xs-4 text-right">
+                            <span>基金账户:</span>
+                        </div>
+                        <div class="col-xs-8 text-left">
+                            <input type="text" class="form-control" ns-bind="fundAccount" required="" autofocus=""/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 text-right">
+                            <span>基金代码:</span>
+                        </div>
+                        <div class="col-xs-8 text-left">
+                            <input type="text" class="form-control" ns-bind="fundCode" required="" autofocus=""/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 text-right">
+                            <span>申请金额:</span>
+                        </div>
+                        <div class="col-xs-8 text-left">
+                            <input type="text" class="form-control" ns-bind="applyAmount" required="" autofocus=""/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 text-right">
+                            <span>回找代码:</span>
+                        </div>
+                        <div class="col-xs-8 text-left">
+                            <input type="text" class="form-control" ns-bind="backForCode" required="" autofocus=""/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                    <div class="col-xs-4 text-right">
+                        <span>代理费率:</span>
+                    </div>
+                    <div class="col-xs-8 text-left">
+                        <input type="text" class="form-control" ns-bind="agentRate" required="" autofocus=""/>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-xs-4 text-right">
+                            <span>结算币种:</span>
+                        </div>
+                        <div class="col-xs-8 text-left">
+                            <input type="text" class="form-control" ns-bind="settlementCurrency" required="" autofocus=""/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 text-right">
+                            <span>总费率:</span>
+                        </div>
+                        <div class="col-xs-8 text-left">
+                            <input type="text" class="form-control" ns-bind="totalRate" required="" autofocus=""/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 text-right">
+                            <span>销售人:</span>
+                        </div>
+                        <div class="col-xs-8 text-left">
+                            <input type="text" class="form-control" ns-bind="salePerson" required="" autofocus=""/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 text-right">
+                            <span>交易时间:</span>
+                        </div>
+                        <div class="col-xs-8 text-left">
+                            <input type="text" class="form-control" ns-bind="tradeTime" required="" autofocus=""/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 text-right">
+                            <span>TA代码:</span>
+                        </div>
+                        <div class="col-xs-8 text-left">
+                            <input type="text" class="form-control" ns-bind="TACode" required="" autofocus=""/>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button  type="submit" class="btn btn-primary">确定</button>
+            </div>
+        </div>
+    </div>
+</div>

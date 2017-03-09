@@ -1,0 +1,103 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>基金互认服务平台</title>
+    <link rel="stylesheet" href="lib/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="common/css/main.min.css">
+</head>
+<body>
+<div class="header">
+    <div class="headermenu">
+        <img width="227px" height="50px" src="common/img/linklink.jpg" style="padding-top:6px; margin-top:6px; padding-left:30px;"> 
+        <ul>
+        
+        
+            <li><a class="active"               
+            href="aboutUs.html">基金首页</a></li>
+         
+            <li><a 
+                
+            href="index.html">退出</a></li>
+        </ul>
+    </div>
+</div>
+<div class="body">
+    <div class="context_photo_information">
+    </div>
+    <div id="productTable" class="context_back">
+        <div class="context_frame">
+            <div class="content_box">
+                <div class="product_frame">
+                    <div class="product_title">
+                        <div class="pink"></div>
+                        <span>基金列表</span>
+                    </div>
+                    <div>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th width="15%">申请单号</th>
+                                    <th width="15%">业务代码</th>
+                                    <th width="15%">基金账户</th>
+                                    <th width="15%">基金代码</th>
+                                    <th width="20%">申请金额</th>
+                                    <th width="20%"> 操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ns-repeat="item in data">
+                                    <td>
+                                        <a><span ns-click="openDetail(item)" ns-bind="item.applyNo"></span></a>
+                                    </td>
+                                    <td>
+                                        <span ns-bind="item.serviceCode"></span>
+                                    </td>
+                                    <td>
+                                        <span ns-bind="item.fundAccount"></span>
+                                    </td>
+                                    <td>
+                                        <span ns-bind="item.fundCode"></span>
+                                    </td>
+                                    <td>
+                                        <span ns-bind="item.applyAmount"></span>
+                                    </td>
+                                    <td align="center">
+                                        <p>
+                                            <button  class="btn btn-primary" ns-click="confirmPre(item)">预确认</button>
+                                            <button ns-click="confirm(item)" class="btn btn-primary">确认</button>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footercontent">
+            <span>
+            	Copyright © 2017 linklink All Rights Reserved. <br>
+linklink 版权所有<br>
+            </span>
+    </div>
+</div>
+    <!--[if lte IE 9]>
+    <script src="lib/respond/1.4.2/respond.min.js"></script>
+    <script src="lib/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="lib/jquery/1.11/jquery.js"></script>
+    <script src="lib/bootstrap/3.3.0/js/bootstrap.js"></script>
+    <script src="lib/ajaxuploadfile/ajaxUploadFile.js"></script>
+    <script src="common/js/main.min.js"></script>
+    <script src="common/js/modalTemplate.min.js"></script>
+<script src="common/js/fund.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>登录基金互认服务平台</title>
+    <% include common/comCss.ejs %>
+</head>
+<body>
+	<div id="login" class="container mt40">
+      <form class="form-signin" id="formLogin" ns-submit='login()' role="form">
+        <h4 class="form-signin-heading">请登录基于区块链的基金互认平台</h4>
+        <input id="userName" class="form-control" placeholder="用户名" required="" autofocus="">
+        <input id="password" type="password" class="form-control" placeholder="密码" required="">
+        <div class="mt10">
+            <span class="input-group-addon">
+                <input type="radio" name="userType" required="" group="" value="bank" aria-label="...">银行用户
+            </span>
+            <span class="input-group-addon">
+                <input type="radio" name="userType" required="" value="fund" aria-label="...">基金用户
+            </span>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input id="isRecord" type="checkbox" value="remember-me"> 记住我
+          </label>
+        </div> 
+        <button  class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+        <br>
+        <div id="success" class="alert alert-success" role="alert"></div>
+        <div id="error" class="alert alert-danger" role="alert"></div>
+      </form>
+    </div>
+<% include common/comJs.ejs %>
+<script src="common/js/index.min.js"></script>
+</body>
+</html>

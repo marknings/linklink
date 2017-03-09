@@ -1,0 +1,12 @@
+{
+  "name": "1-fund",
+  "version": "1.0.0",
+  "description": "webserver demo from http://nodejs.org/",
+  "dependencies" : [],
+  "scripts": {
+    "start": "node app.js"
+    },
+  "engines": {
+    "node": ">=0.10"
+  }
+}

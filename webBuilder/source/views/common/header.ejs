@@ -1,0 +1,20 @@
+<div class="header">
+    <div class="headermenu">
+        <img width="227px" height="50px" src="common/img/linklink.jpg" style="padding-top:6px; margin-top:6px; padding-left:30px;"> 
+        <ul>
+        <% if((typeof page!='undefined')&&(page=='bank.html')){%>
+            <li><a  class="active"                
+            href="bank.html">银行首页</a></li>
+        <%}%>
+        <% if((typeof page!='undefined')&&(page=='fund.html')){%>
+            <li><a class="active"               
+            href="aboutUs.html">基金首页</a></li>
+         <%}%>
+            <li><a 
+                <% if((typeof page!='undefined')&&(page=='index.html')){%>
+                    class="active"
+                <%}%>
+            href="index.html">退出</a></li>
+        </ul>
+    </div>
+</div>
